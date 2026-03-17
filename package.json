@@ -1,0 +1,31 @@
+{
+  "name": "ttrss-mcp",
+  "version": "1.0.0",
+  "description": "Tiny Tiny RSS MCP Server - 通过 AI 助手读写 tt-rss 订阅源",
+  "author": "aooiuu <aooiu@qq.com>",
+  "type": "module",
+  "bin": {
+    "ttrss-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "zod": "^3.24"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "keywords": ["mcp", "tt-rss", "rss"]
+}
